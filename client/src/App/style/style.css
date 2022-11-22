@@ -1,0 +1,152 @@
+@import "nav.css";
+@import "help.css";
+
+:root{
+    --menu: #23232E;
+    --menu-letter: white;
+    --footer: #23232E;
+
+    --btn-a: rgba(129,230,217,1) ;
+    --btn-b: rgba(79,209,197,1) ;
+    --btn-letter: #6AA5A9;
+    --btn-letter-h: #116169;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, Arial, Helvetica, sans-serif; 
+}
+li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/* Main */
+
+main{
+    background: url("/src/App/img/main.jpg") no-repeat center center;
+    background-size: cover; 
+    width: 100vw;
+    min-height: 100vh;    
+
+
+}
+@media (max-width: 999px) {
+    main{
+        background: url("/src/App/img/main.png") no-repeat  center center;     
+    }
+}
+
+/* Section */
+
+section{
+    /* background-color: #23232e2c; */
+    min-height: 84vh;
+    width: min-content;
+    margin: 0 auto 0 auto;
+    display: none;
+}
+#help{
+    display:block;
+}
+/* Support */
+#support{
+    
+    color: pink;}
+.support{
+    padding: 50px;
+}
+
+
+.support input{
+    background: transparent;
+    border: none;
+    border-bottom:  2px solid #6AA5A9;
+    margin-bottom: 10px;
+    outline: none;
+    color: pink;
+}
+.support input, .support button{    
+    /* border:  1.5px solid transparent; */
+    
+    border-radius: 5px;
+    width: 30vw;
+
+}
+.support button{
+    border-radius: 15px;
+    border: none;
+    background: #80b4b9;
+    color: azure;
+    padding: 5px;
+}
+
+/* Footer */
+
+footer{
+    background: var(--footer);
+    height: 8vh;
+    width: 100vw;
+    margin-bottom: 100;
+}
+ 
+/* main */
+
+/* Noticias */
+
+#news li{ 
+    cursor: pointer;
+}
+.newsLine{
+    background-color: rgba(52, 52, 52, 0.257);
+}
+.news-line  {
+    flex-direction: column;
+}
+.news-line li{
+    width: 210px;
+    height: 130px;
+    margin: 10px;
+    border-radius: 7px;
+    overflow: hidden;
+    background: no-repeat bottom center;
+    background-size: cover; 
+
+}
+.news-line-a{
+    display: inline-flex;
+}
+.news-line-b,.news-line-c{
+    display: none;
+}
+.news-line article{
+    margin-top: 40%;
+    font-size: 12px;
+    padding: 10px;
+    height: 100%;
+    background: white;
+}
+.news-line li:hover article{
+    margin-top: 20%;
+    transition: all 1s;
+}
+.index{
+    padding: 10px 50px 10px 50px;
+    display: flex;
+}
+.index li{
+    margin: 0 auto 0 auto;
+    background: white;
+  
+    border-radius: 100px;
+    width: 15px;
+    height: 15px;
+
+    transition: all 1s;
+}
+.index li:hover{
+    background: #23232E;
+    transition: all 1s;
+} 
